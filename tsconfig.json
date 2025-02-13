@@ -1,0 +1,32 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+      "@vue/test-utils": ["node_modules/@vue/test-utils"]  // Stellt sicher, dass Vue-Test-Utils richtig gefunden werden
+    },
+    "types": [
+      "vitest/globals",  // Für Vitest-Typen
+      "@nuxt/types",     // Nuxt-spezifische Typen
+      "@types/node",     // Node.js-Typen
+      "cypress",          // Cypress-Typen für Tests
+      "webpack-env"       // Webpack-Umgebungsvariablen für Cypress-Webpack-Integration
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    ".nuxt",
+    "dist"
+  ]
+}

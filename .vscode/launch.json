@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Nuxt App",
+            "program": "${workspaceFolder}/${input:programPath}",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "dev"
+            ],
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ],
+    "inputs": [
+        {
+            "type": "promptString",
+            "id": "programPath",
+            "description": "Path to the program file"
+        }
+    ]
+}

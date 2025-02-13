@@ -1,0 +1,6 @@
+[
+    { "id": 1, "marke": "Audi", "modell": "A4", "kennzeichen": "B-A1234" },
+    { "id": 2, "marke": "Audi", "modell": "Q5", "kennzeichen": "B-B5678" },
+    { "id": 3, "marke": "Audi", "modell": "A3", "kennzeichen": "B-C9876" }
+  ]
+  

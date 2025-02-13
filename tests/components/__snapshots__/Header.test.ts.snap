@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Header.vue > matches the header structure with a snapshot 1`] = `
+"<header class="bg-primary-50 p-4 shadow-custom">
+  <nav class="flex items-center space-x-4">
+    <!-- Logo --><img src="/assets/images/AI_logo.png" alt="Logo" class="h-8 w-auto">
+    <ul class="flex space-x-4">
+      <li>
+        <nuxtlink to="/kfz/fahrzeuge" class="px-3 py-2 bg-primary-50 rounded hover:bg-primary-200 hover:text-black transition-colors duration-300"> Fuhrpark </nuxtlink>
+      </li>
+      <li>
+        <nuxtlink to="/versicherung" class="px-3 py-2 bg-primary-50 rounded hover:bg-primary-200 hover:text-black transition-colors duration-300"> Versicherung </nuxtlink>
+      </li>
+    </ul>
+  </nav>
+</header>"
+`;
